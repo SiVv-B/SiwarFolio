@@ -55,7 +55,7 @@ function NavBar() {
                 }
                 onClick={() => onUpdateActiveLink('home')}
               >
-                Home
+                Home - test
               </Nav.Link>
 
               <Nav.Link
