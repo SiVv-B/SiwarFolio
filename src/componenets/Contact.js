@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react'
 import { Container, Row, Col } from 'react-bootstrap'
-import contactImg from '../assets/img/contact-img.svg'
+import contactImg from '../assets/img/contactme.jpg'
 import 'animate.css'
 import TrackVisibility from 'react-on-screen'
 import emailjs from '@emailjs/browser'
@@ -55,9 +55,7 @@ const Contact = () => {
               {({ isVisible }) => (
                 <img
                   className={
-                    isVisible
-                      ? 'animate__animated animate__rotateInDownLeft'
-                      : ''
+                    isVisible ? 'animate__animated animate__pulse' : ''
                   }
                   src={contactImg}
                   alt="Contact Us"
@@ -70,7 +68,9 @@ const Contact = () => {
               {({ isVisible }) => (
                 <div
                   className={
-                    isVisible ? 'animate__animated animate__pulse' : ''
+                    isVisible
+                      ? 'animate__animated animate__rotateInDownRight'
+                      : ''
                   }
                 >
                   <form ref={formRef} onSubmit={onsubmit}>

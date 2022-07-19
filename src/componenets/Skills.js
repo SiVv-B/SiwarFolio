@@ -55,8 +55,8 @@ const Skills = () => {
                         isVisible ? 'animate__animated animate__fadeIn' : ''
                       }
                     >
-                      Here are the technologies that I use as a full-Stack web
-                      developer.<br></br>
+                      Here are some of the technologies I use as a full-Stack
+                      web developer<br></br>
                     </p>
                     <div
                       className={

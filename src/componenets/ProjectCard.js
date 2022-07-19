@@ -17,7 +17,7 @@ const ProjectCard = ({
         {({ isVisible }) => (
           <div className={isVisible ? 'animate__animated animate__pulse' : ''}>
             <div className="proj-imgbx">
-              <img src={imgUrl} />
+              <img src={imgUrl} style={{ height: '300px' }} />
               <div className="proj-txtx">
                 <h4>{title}</h4>
                 <span>{description}</span>
