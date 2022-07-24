@@ -1,16 +1,16 @@
 .stage-cube-cont {
     width: 50%;
     height: 100%;
-    top:0 ;
+    margin-top: -10%;
     padding-top: 18%;
-    margin-left: 0;
+margin-left: -10%;
     position: absolute;
     right: 0;
     overflow: hidden;
+
   }
   
-  .cubespinner {
-    animation-name: spincube;
+  .cubespinner {    animation-name: spincube;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 12s;
@@ -30,6 +30,7 @@
       justify-content: center;
       align-items: center;
       box-shadow: 0 0 20px 0px rgb(250, 186, 243);
+
     }
   
     .face1 {
@@ -80,3 +81,122 @@
       transform: rotateX(90deg);
     }
   }
+
+
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    .introDiv{
+      margin-left: -40%;
+    }
+    .cube{
+        margin-top: 10% ;
+    }
+  
+    .div {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgb(204, 204, 204);
+      background: rgba(252, 236, 247, 0.494);
+      text-align: center;
+      font-size: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 0 20px 0px rgb(250, 186, 243);
+  
+    }
+    
+    .face1 {
+      transform: translateZ(200px);
+      color: #dd0031;
+    }
+    .face2 {
+      transform: rotateY(90deg) translateZ(80px);
+      color: #f06529;
+    }
+    .face3 {
+      transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+      color: #28a4d9;
+    }
+    .face4 {
+      transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+      color: #5ed4f4;
+    }
+    .face5 {
+      transform: rotateY(-90deg) rotateZ(90deg) translateZ(80px);
+      color: #efd81d;
+    }
+    .face6 {
+      transform: rotateX(-90deg) translateZ(80px);
+      color: #ec4d28;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .introDiv{
+    margin-left: -60%;
+
+  }
+  .cube{
+display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .introDiv{
+    margin-left: -30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .introDiv{
+    margin-left: -30%;
+  }
+  .cube{
+      margin-top: 10% ;
+  }
+
+  .div {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: solid;
+    border-color: green;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgba(252, 236, 247, 0.494);
+    text-align: center;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 0px rgb(250, 186, 243);
+
+  }
+  
+  .face1 {
+    transform: translateZ(200px);
+    color: #dd0031;
+  }
+  .face2 {
+    transform: rotateY(90deg) translateZ(80px);
+    color: #f06529;
+  }
+  .face3 {
+    transform: rotateY(90deg) rotateX(90deg) translateZ(80px);
+    color: #28a4d9;
+  }
+  .face4 {
+    transform: rotateY(180deg) rotateZ(90deg) translateZ(80px);
+    color: #5ed4f4;
+  }
+  .face5 {
+    transform: rotateY(-90deg) rotateZ(90deg) translateZ(80px);
+    color: #efd81d;
+  }
+  .face6 {
+    transform: rotateX(-90deg) translateZ(80px);
+    color: #ec4d28;
+  }
+
+}

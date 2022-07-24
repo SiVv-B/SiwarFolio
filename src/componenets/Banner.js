@@ -25,10 +25,15 @@ const Banner = () => {
     <section className="banner" id="home">
       <Container>
         <Row className="aligh-items-center">
-          <Col xs={12} md={6} xl={7}>
+          <Col xs={12} md={6} xl={7} className="intro">
             <TrackVisibility>
               {({ isVisible }) => (
-                <div>
+                <div
+                  className="introDiv"
+                  style={{
+                    marginRight: '-60%',
+                  }}
+                >
                   <span className="tagline">Welcome to my Portfolio</span>
                   <Collapse in={checked} {...(true ? { timeout: 1000 } : {})}>
                     <h1>
@@ -74,7 +79,7 @@ const Banner = () => {
             style={{ transitionDelay: checked ? '300ms' : '0ms' }}
             {...(true ? { timeout: 2000 } : {})}
           >
-            <Col xs={12} md={6} xl={5}>
+            <Col className="cube">
               <TrackVisibility>
                 <div className="stage-cube-cont">
                   <div className="cubespinner">

@@ -1,7 +1,9 @@
 import 'animate.css'
+
 import TrackVisibility from 'react-on-screen'
 import { Container, Row, Col, Tab, Nav } from 'react-bootstrap'
 import ProjectCard from './ProjectCard'
+import ocrmarss from '../assets/img/OCR-MARSS.jpg'
 import projImg1 from '../assets/img/project-img1.png'
 import projImg2 from '../assets/img/project-img2.png'
 import projImg3 from '../assets/img/project-img3.png'
@@ -11,11 +13,11 @@ import colorSharp2 from '../assets/img/color-sharp2.png'
 const Projects = () => {
   const projectsFullStack = [
     {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      LinkToWebsite: 'See the Website',
-      LinkToProject: 'See the Code',
-      imgUrl: projImg1,
+      title: 'OCR-MARSS company',
+      description: 'Private company to manage nuclear zones',
+      LinkToWebsite: 'https://ocr-marss.herokuapp.com/',
+      LinkToProject: 'https://github.com/SiVv-B/ocr-marss-gomycode',
+      imgUrl: ocrmarss,
     },
     {
       title: 'Business Startup',
@@ -37,20 +39,6 @@ const Projects = () => {
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg1,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      LinkToWebsite: 'See the Website',
-      LinkToProject: 'See the Code',
-      imgUrl: projImg2,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      LinkToWebsite: 'See the Website',
-      LinkToProject: 'See the Code',
-      imgUrl: projImg3,
     },
   ]
 
@@ -99,13 +87,6 @@ const Projects = () => {
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg2,
-    },
-    {
-      title: 'Business Startup',
-      description: 'Design & Development',
-      LinkToWebsite: 'See the Website',
-      LinkToProject: 'See the Code',
-      imgUrl: projImg3,
     },
   ]
 
@@ -166,7 +147,7 @@ const Projects = () => {
                 )}
               </TrackVisibility>
 
-              <Tab.Content id="slideInUp">
+              <Tab.Content id="slideInUp" className="projectsTabContent">
                 <Tab.Pane eventKey="first">
                   <Row>
                     {projectsFullStack.map((project, index) => {

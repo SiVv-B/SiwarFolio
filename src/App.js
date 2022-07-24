@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import NavBar from './componenets/NavBar'
 import Banner from './componenets/Banner'

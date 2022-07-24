@@ -17,7 +17,7 @@ const ProjectCard = ({
         {({ isVisible }) => (
           <div className={isVisible ? 'animate__animated animate__pulse' : ''}>
             <div className="proj-imgbx">
-              <img src={imgUrl} style={{ height: '300px' }} />
+              <img src={imgUrl} style={{ height: '300px', width: '460px' }} />
               <div className="proj-txtx">
                 <h4>{title}</h4>
                 <span>{description}</span>
@@ -25,6 +25,8 @@ const ProjectCard = ({
                   <table className="table table-borderless">
                     <thead style={{}}>
                       <a
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href={LinkToWebsite}
                         style={{
                           color: 'white',
@@ -45,6 +47,8 @@ const ProjectCard = ({
                         </td>
                       </a>
                       <a
+                        target="_blank"
+                        rel="noopener noreferrer"
                         href={LinkToProject}
                         style={{ color: 'white', textDecoration: 'none' }}
                       >
@@ -65,6 +69,8 @@ const ProjectCard = ({
                     <tbody>
                       <tr>
                         <a
+                          target="_blank"
+                          rel="noopener noreferrer"
                           href={LinkToWebsite}
                           style={{ color: 'white', textDecoration: 'none' }}
                         >
@@ -72,6 +78,8 @@ const ProjectCard = ({
                         </a>
 
                         <a
+                          target="_blank"
+                          rel="noopener noreferrer"
                           href={LinkToProject}
                           style={{ color: 'white', textDecoration: 'none' }}
                         >

@@ -50,7 +50,7 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6}>
+          <Col size={12} md={6} className="colImg">
             <TrackVisibility>
               {({ isVisible }) => (
                 <img
