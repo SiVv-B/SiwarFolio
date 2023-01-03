@@ -19,27 +19,27 @@ const Projects = () => {
       LinkToProject: 'https://github.com/SiVv-B/ocr-marss-gomycode',
       imgUrl: ocrmarss,
     },
-    {
+/*     {
       title: 'Business Startup',
       description: 'Design & Development',
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg2,
-    },
+    }, */
     {
       title: 'Business Startup',
       description: 'Design & Development',
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg3,
-    },
+    },/* 
     {
       title: 'Business Startup',
       description: 'Design & Development',
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg1,
-    },
+    }, */
   ]
 
   const projectsFrontEnd = [
@@ -50,7 +50,7 @@ const Projects = () => {
       LinkToProject:
         'https://github.com/SiVv-B/To-Do-List-App/tree/master/todolistapp',
       imgUrl: ToDoList,
-    },
+    },/* 
     {
       title: 'Business Startup',
       description: 'Design & Development',
@@ -64,7 +64,7 @@ const Projects = () => {
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg2,
-    },
+    }, */
     {
       title: 'Business Startup',
       description: 'Design & Development',
@@ -81,13 +81,13 @@ const Projects = () => {
       LinkToProject: 'See the Code',
       imgUrl: projImg3,
     },
-    {
+/*     {
       title: 'Business Startup',
       description: 'Design & Development',
       LinkToWebsite: 'See the Website',
       LinkToProject: 'See the Code',
       imgUrl: projImg2,
-    },
+    }, */
   ]
 
   return (
